@@ -13,6 +13,11 @@ body {
 
   background: #000000 url("../img/body-bg.jpg") no-repeat top center;
 }
+.price-page {
+  color: #000000;
+
+  background: #f9f6f3 url("../img/white-pattern.png") repeat;
+}
 .container {
   width: 960px;
   margin: 0 auto;
@@ -101,6 +106,7 @@ body {
 }
 .main-nav__link--active:hover {
   background: none;
+  cursor: default;
 }
 .main-nav__link--active:after {
   content: "";
@@ -388,4 +394,318 @@ body {
 }
 .btn__social:hover {
   background-color: #663d15;
+}
+.main-nav__logo {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+  margin-right: 20px;
+}
+.main-nav__logo-img {
+  width: 111px;
+  height: 24px;
+}
+.price-page .page-header {
+  margin-bottom: 55px;
+}
+ .price-page__title h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+ }
+ .breadcrumbs {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+ }
+.breadcrumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 30px;
+}
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+.breadcrumbs li:after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  right: 18px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+.breadcrumbs .current:after {
+  display: none;
+}
+.inner-content {
+  margin-bottom: 70px;
+}
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+.inner-content p {
+  margin: 14px 0;
+}
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+.inner-content__prices-table {
+  border-collapse: collapse;
+}
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+}
+.inner-content__big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+}
+.inner-content__big-heading h2{
+  position: relative;
+  background: red;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 2;
+  background: url("../img/white-pattern.png") repeat;
+
+}
+.inner-content__big-heading:after {
+  content: "";
+  position: relative;
+  top: -25px;
+
+  display: block;
+  z-index: 1;
+  border-bottom: 2px solid #000000;
+}
+.inner-content__custom-list1 {
+  margin: 14px 0;
+  padding: 0;
+  
+  list-style: none;
+}
+ .inner-content__custom-list1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+ }
+ .inner-content__custom-list1 li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+ }
+ .inner-content__prices-table {
+  width: 100%;
+ }
+ .inner-content__prices-table td {
+  width: 50%;
+ }
+ .inner-content__prices-table td:last-child {
+  text-align: center;
+ }
+ .inner-content__columns {
+  margin: 60px 0;
+ }
+.inner-content__column-left,
+.inner-content__column-right {
+  width: 480px;
+}
+.inner-content__column-left {
+  float: left;
+}
+.inner-content__column-right {
+  float: right;
+}
+.inner-content__column-left *:first-child,
+.inner-content__column-right *:first-child {
+  margin-top: 0;
+}
+.inner-content__column-left *:last-child,
+.inner-content__column-right *:last-child {
+  margin-top: 0;
+}
+.modal-content {
+  display: none;
+  position: absolute;
+  width: 460px;
+  top: 120px;
+  left: 50%;
+  padding: 60px 80px;
+
+  color: #000000;
+
+  background: #f8f5f2 url("../img/white-pattern.png");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  transform: translateX(-50%);
+}
+.modal-content__close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.modal-content__close:before,
+.modal-content__close:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+.modal-content__close:before {
+  transform: rotate(45deg);
+}
+.modal-content__close:after {
+  transform: rotate(-45deg);
+}
+.modal-content__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.modal-content__login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.modal-content__field {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+.modal-content__login-form .restore {
+  float: right;
+
+  color: #000000;
+}
+.modal-content__login-form .btn {
+  width: 100%;
+
+  margin-top: 15px;
+}
+.modal-content__login {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.modal-content__login:hover {
+  color: #663d15;
+}
+.modal-content__login input[type="checkbox"] {
+  display: none;
+}
+ .modal-content__login input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+ }
+ .modal-content__login input[type="checkbox"]:checked + .checkbox-indicator:before,
+ .modal-content__login input[type="checkbox"]:checked + .checkbox-indicator:after
+  {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -1px;
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+ }
+.modal-content__login input[type="checkbox"]:checked + .checkbox-indicator:before {
+  transform: rotate(45deg);
+}
+.modal-content__login input[type="checkbox"]:checked + .checkbox-indicator:after {
+  transform: rotate(-45deg);
+}
+.modal-content__map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  margin-top: -280px;
+  margin-left: -390px;
+  width: 766px;
+  height: 561px;
+
+  background: #aba9a7 url("../img/map.png");
+  border: 7px solid #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
 }
